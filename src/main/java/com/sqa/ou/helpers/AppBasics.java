@@ -23,16 +23,6 @@ public class AppBasics {
 
 	static Scanner scanner = new Scanner(System.in);
 
-	public static void addTwoNumbers() {
-		System.out.println("What is the first number to be added? ");
-		Scanner scan = new Scanner(System.in);
-		int num1 = scan.nextInt();
-		System.out.println("What is the second number to be added to " + num1 + "? ");
-		int num2 = scan.nextInt();
-		int num3 = num1 + num2;
-		System.out.println("Your total from adding these two numbers is " + num3);
-	}
-
 	public static void farewellUser(String userName, String appName) {
 		System.out.println("Thank you for using the " + appName + " Application");
 		System.out.println("Good Bye " + userName);

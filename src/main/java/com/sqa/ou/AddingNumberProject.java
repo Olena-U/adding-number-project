@@ -7,6 +7,8 @@
  */
 package com.sqa.ou;
 
+import java.util.*;
+
 import com.sqa.ou.helpers.*;
 
 /**
@@ -25,7 +27,17 @@ public class AddingNumberProject {
 	public static void main(String[] args) {
 		String appName = "Adding Numbers";
 		String userName = AppBasics.greetUserAndGetName(appName);
-		AppBasics.addTwoNumbers();
+		addTwoNumbers();
 		AppBasics.farewellUser(userName, appName);
+	}
+	
+	public static void addTwoNumbers() {
+		System.out.println("What is the first number to be added? ");
+		Scanner scan = new Scanner(System.in);
+		int num1 = scan.nextInt();
+		System.out.println("What is the second number to be added to " + num1 + "? ");
+		int num2 = scan.nextInt();
+		int num3 = num1 + num2;
+		System.out.println("Your total from adding these two numbers is " + num3);
 	}
 }
